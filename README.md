@@ -47,15 +47,15 @@ Cara kerja program: memori diisi fakta yang dijawab "ya" oleh pengguna. Lalu pro
 
 ## 5. Tiga kasus uji
 
-**Kasus 1: musim kemarau, bercak keperakan di bawah daun muda, dan daun muda keriting (jawaban y untuk pertanyaan 1, 2, 9).** Program menjalankan R1 dan R6. Kesimpulannya: tanaman terserang thrips dan peringatan populasi hama meningkat di musim kemarau.
+**Kasus 1: musim kemarau, bercak keperakan di bawah daun muda, dan daun muda keriting (jawaban y untuk pertanyaan 1, 2, 5, 6, 9).** Program menjalankan R1, R3, R4 dan R6. Kesimpulannya: tanaman terserang thrips, buah terserang antraknosa dan peringatan populasi hama meningkat di musim kemarau.
 
 ![Kasus 1](screenshot/Kasus1.png)
 
-**Kasus 2: buah berbercak kecil hitam yang sedikit cekung dan buah berkerut, lunak, membusuk (jawaban y untuk pertanyaan 5 dan 6).** Program menjalankan R3 lalu R4. Kesimpulannya: buah terserang antraknosa, dengan alasan yang menelusuri R4 sampai R3.
+**Kasus 2: buah berbercak kecil hitam yang sedikit cekung dan buah berkerut, lunak, membusuk (jawaban y untuk pertanyaan 1, 2, 3 dan 4).** Program menjalankan R1 lalu R2. Kesimpulannya: tanaman terserang thrips dan buah terserang lalat buah
 
 ![Kasus 2](screenshot/Kasus2.png)
 
-**Kasus 3 (negatif): hanya daun muda keriting (jawaban y untuk pertanyaan 2 saja).** Gejala bercak keperakan tidak ada, jadi R1 tidak terpenuhi. Tidak ada aturan yang cocok, sehingga program menampilkan bahwa tidak ada kesimpulan.
+**Kasus 3 (negatif): semua jawaban t.** Tidak ada aturan yang cocok, sehingga program menampilkan bahwa tidak ada kesimpulan.
 
 ![Kasus 3](screenshot/Kasus3.png)
 
