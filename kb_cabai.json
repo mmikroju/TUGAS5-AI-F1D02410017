@@ -1,0 +1,16 @@
+{
+  "judul": "Diagnosis awal hama dan penyakit tanaman cabai",
+  "batas": "Aturan berasal dari 2 sumber: buku Balitbangtan/BPTP Jambi tentang hama dan penyakit cabai (2014) dan artikel jurnal tentang antraknosa pada cabai merah di Magelang (2021). Hanya mencakup thrips, lalat buah, antraknosa, dan layu fusarium, serta peringatan musim kemarau. Gejala bisa mirip antarpenyakit dan beberapa penyakit bisa menyerang bersamaan, sehingga tidak menggantikan pemeriksaan penyuluh atau uji laboratorium. Hasilnya saran awal, bukan keputusan akhir.",
+  "sumber": {
+    "S1": "Hama dan Penyakit pada Tanaman Cabai serta Pengendaliannya, Araz Meilin, Balai Pengkajian Teknologi Pertanian (BPTP) Jambi, Badan Litbang Pertanian, Kementerian Pertanian, 2014, https://repository.pertanian.go.id/bitstream/handle/123456789/10254/14bookcabe.pdf, diakses 10 Nov 2026",
+    "S2": "Identifikasi dan Uji Patogenisitas Colletotrichum spp. dari Cabai Merah (Capsicum annuum): Kasus di Kricaan, Magelang, Jawa Tengah, Noorkomala Sari dan Rina Sri Kasiamdari, Jurnal Ilmu Pertanian Indonesia vol 26 no 2, hlm 243-250, April 2021, IPB University, https://journal.ipb.ac.id/index.php/JIPI/article/download/27516/21546, diakses 10 Nov 2026"
+  },
+  "aturan": [
+    {"id": "R1", "jika": ["ada bercak keperakan di permukaan bawah daun muda", "daun muda keriting atau mengkerut"], "mode": "dan", "maka": "tanaman terserang thrips", "sumber": "S1"},
+    {"id": "R2", "jika": ["ada titik hitam di pangkal buah", "buah menguning pucat, membusuk, lalu jatuh"], "mode": "dan", "maka": "buah terserang lalat buah", "sumber": "S1"},
+    {"id": "R3", "jika": ["buah berbercak kecil hitam yang sedikit cekung"], "mode": "dan", "maka": "gejala awal antraknosa pada buah", "sumber": "S1, S2"},
+    {"id": "R4", "jika": ["gejala awal antraknosa pada buah", "buah berkerut, lunak, dan membusuk"], "mode": "atau", "maka": "buah terserang antraknosa", "sumber": "S1, S2"},
+    {"id": "R5", "jika": ["daun bawah layu dan menguning", "pangkal batang atau akar cokelat dan tertutup hifa putih seperti kapas"], "mode": "dan", "maka": "tanaman terserang layu fusarium", "sumber": "S1"},
+    {"id": "R6", "jika": ["sedang musim kemarau"], "mode": "dan", "maka": "waspada: populasi thrips, kutu daun, dan tungau cenderung meningkat di musim kemarau", "sumber": "S1"}
+  ]
+}
